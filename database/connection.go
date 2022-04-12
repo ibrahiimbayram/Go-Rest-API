@@ -12,7 +12,7 @@ var DB *gorm.DB
 func Connection() {
 
 	var err error
-	const connString = "server=DESKTOP-F621BN8;user id=;password=;port=1433;database=GoProject"
+	const connString = "server=localdb;user id=;password=;port=1433;database=GoProject"
 
 	DB, err = gorm.Open(sqlserver.Open(connString))
 
